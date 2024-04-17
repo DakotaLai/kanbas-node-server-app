@@ -67,10 +67,10 @@ function UserRoutes(app) {
     const profile = async (req, res) => {
         const currentUser = req.session["currentUser"];
         // console.log(currentUser);
-        if (!currentUser) {
-            res.sendStatus(401);
-            return;
-        }
+        // if (!currentUser) {
+        //     res.sendStatus(401);
+        //     return;
+        // }
         res.json(currentUser)
     };
     app.post("/api/users", createUser);
