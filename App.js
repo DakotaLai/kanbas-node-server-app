@@ -46,6 +46,7 @@ if (process.env.NODE_ENV !== "development") {
 app.use(
     session(sessionOptions)
 );
+console.log("sessionOptions", sessionOptions);
 Hello(app)
 Lab5(app)
 app.use(express.json());
